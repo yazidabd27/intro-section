@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 98%) !important;
+    font-family: 'Epilogue', sans-serif !important; 
+    transition: .5s;
+}
+
+nav,
+nav form button{
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.nav-item{
+    margin: 0 16px;
+}
+
+.drop-menu{
+    position: absolute;
+    left: -80%;
+    top: 120%;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 150px;
+    padding:10px 20px;
+    box-shadow: 0 0 10px 0 #ddd;
+    color: hsl(0, 0%, 41%);
+    display: none;
+}
+
+.drop-menu > div{
+    margin: 10px 0;
+}
+
+.drop-menu > div img{
+    margin-right: 10px;
+}
+
+.drop-menu2{
+    left: 10%;
+    width: 110px;
+}
+
+.dropdown a img.rotate{
+    transform: rotate(180deg);
+}
+
+nav form button:nth-child(2),
+.description .btn{
+    border-radius: 10px;
+}
+
+nav form button:first-child:hover{
+    color: hsl(0, 0%, 8%) !important;
+}
+
+.description h1{
+    font-size: 60px ;
+}
+
+.description p{
+    font-size: 16px ;
+}
+
+.description .btn:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+
+}
+
+
+.img-hero img{
+    height: 520px;
+}
+
+@media(max-width:991px) {
+    #navbarSupportedContent{
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+
+    .show{
+        transform: translateX(0) !important;
+    }
+
+    .drop-menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    body.grey{
+        background-color: hsl(0, 0%, 41%) !important;
+    }
+    
+    .description h1{
+        font-size: 30px;
+    }
+
+    .img-hero img{
+        height: 250px;
+    }
+
+    .description .client{
+        padding: 0 16px;
+        margin-top: 16px;
+    }
+
+    .description .client img{
+        width:20%;
+    }
+
+    ul li{
+        font-size: 15px;
+    }
+
+    form button:nth-last-of-type(1){
+        width: 75%;
+    }
+    
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg navbar-light mx-lg-3 p-3">
+
+        <div class="brand pt-2">
+          <img src="images/logo.svg" alt="">
+        </div>
+
+        <div id="open-button" class="d-lg-none">
+          <img src="images/icon-menu.svg" alt="">
+        </div>
+
+        <div class="navbar-collapse justify-content-between ms-4" id="navbarSupportedContent">
+
+          <img src="images/icon-close-menu.svg" alt="" class="img-fluid d-lg-none float-end p-4" id="close-button" role="button">
+
+          <ul class="navbar-nav mt-5 pt-4 mt-lg-0 pt-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">
+                Features
+                <img src="images/icon-arrow-down.svg" alt="" class="ms-1">
+              </a>
+              <div class="drop-menu">
+                <div>
+                  <img src="images/icon-todo.svg" alt="">
+                  Todo List
+                </div>
+                <div>
+                  <img src="images/icon-calendar.svg" alt="">
+                  Calendar
+                </div>
+                <div>
+                  <img src="images/icon-reminders.svg" alt="">
+                  Reminders
+                </div>
+                <div>
+                  <img src="images/icon-planning.svg" alt="">
+                  Planning
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">
+                Company
+                <img src="images/icon-arrow-down.svg" alt="" class="ms-1">
+              </a>
+              <div class="drop-menu drop-menu2">
+                <div>History</div>
+                <div>Our Team</div>
+                <div>Blog</div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0 text-black-50 mx-lg-3 d-block d-lg-inline m-auto" type="submit">Login</button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 d-block d-lg-inline m-auto" type="submit">Register</button>
+          </form>
+
+        </div>
+        
+      </nav>
+
+      <section>
+        <div class="container d-flex flex-wrap-reverse px-0 text-center text-lg-start">
+          <div class="description col-lg-6 col-12 p-lg-5 mt-5">
+            <h1 class="fw-bolder mb-4">Make <br> remote work</h1>
+            <p class="text-black-50 pe-lg-5 fw-bolder">
+              Get you team in sync, no matter you location.
+              Streamline process, create team rituals, and watch productivity soar.
+            </p>
+            <div class="btn btn-dark my-4 fw-bolder">Learn more</div>
+            <div class="client d-flex align-items-center justify-content-between mt-lg-5">
+              <img src="images/client-databiz.svg" alt="" class="img-fluid">
+              <img src="images/client-audiophile.svg" alt="" class="img-fluid">
+              <img src="images/client-meet.svg" alt="" class="img-fluid">
+              <img src="images/client-maker.svg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="img-hero col-lg-6 col-12 text-center">
+            <img src="images/image-hero-desktop.png" alt="" class="img-fluid d-lg-block m-auto d-none">
+            <img src="images/image-hero-mobile.png" alt="" class="img-fluid d-lg-none w-100">
+          </div> 
+        </div>
+      </section>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
